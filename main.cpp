@@ -11,7 +11,7 @@ int main() {
     input("Valeur maximale :", error, max);
 
     int value {};
-    int random_value {rand()%max};
+    int random_value {(rand()%(max-1))+1};
 
     while(value != random_value){
         input("Entrez votre valeur :", error, value);
